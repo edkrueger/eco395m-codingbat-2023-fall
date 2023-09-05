@@ -51,7 +51,11 @@ def diff21(n):
     diff21(10) → 11
     diff21(21) → 0
     """
-    return
+
+    if n > 21:
+        return 2 * abs(n - 21)
+    
+    return abs(n - 21)
 
 
 def parrot_trouble(talking, hour):
@@ -64,7 +68,7 @@ def parrot_trouble(talking, hour):
     parrot_trouble(True, 7) → False
     parrot_trouble(False, 6) → False
     """
-    return
+    return talking and (hour < 7 or hour > 20)
 
 
 def makes10(a, b):
@@ -75,7 +79,9 @@ def makes10(a, b):
     makes10(9, 9) → False
     makes10(1, 9) → True
     """
-    return
+
+
+    return a == 10 or b == 10 or a + b == 10
 
 
 def near_hundred(n):
