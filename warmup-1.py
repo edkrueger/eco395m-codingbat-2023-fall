@@ -34,7 +34,12 @@ def sum_double(a, b):
     sum_double(3, 2) → 5
     sum_double(2, 2) → 8
     """
-    return
+
+    # if a == b:
+    #     return 2 * (a + b)
+    # return a + b
+
+    return 2 * (a + b) if a == b else a + b
 
 
 def diff21(n):
